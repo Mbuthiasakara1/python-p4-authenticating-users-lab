@@ -23,7 +23,7 @@ with app.app_context():
     for i in range(25):
 
         username = fake.first_name()
-        while username in usernames:
+        while username in usernames:#checks if say "joy" is in [] while at this case no so it becomes unique
             username = fake.first_name()
         
         usernames.append(username)
